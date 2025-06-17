@@ -46,6 +46,16 @@ body {
 .stExpander {
     margin-bottom: 10px; /* Spasi antar expander */
 }
+/* CSS untuk bagian penutup kebun bunga agar mudah di-screenshot */
+.kebun-bunga-closing {
+    text-align: center;
+    font-size: 1.1em; /* Sedikit lebih besar dari default */
+    margin-top: 20px;
+    line-height: 1.6; /* Spasi antar baris untuk readability */
+}
+.kebun-bunga-closing strong {
+    color: #e91e63; /* Warna pink untuk penekanan */
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -99,18 +109,18 @@ if st.session_state.quiz_passed or st.session_state.force_pass:
     # Main Title (Updated for readability)
     st.markdown("""
     <h2 class='main-title'>
-        ✨ Sekarang kamu bisa buka semuanya ✨<br>
+        ✨ Sekarang kamu bisa buka semuanya :<br>
         Kita selalu mengutuk Purwakarta,<br>
         tapi disinilah kita bisa bertemu<br>
-        hingga akhirnya bersama sampai lebih dari Selamanya.
+        hingga akhirnya bersama sampai lebih dari Selamanya. ✨
     </h2>
     """, unsafe_allow_html=True)
 
     # --- SUB-JUDUL SELAMAT SIDANG ---
     st.markdown("""
     <h3 class='sub-title-sidang'>
-        🎉 Selamat Sidang, Nesty Ermin Nadhirah 🎉<br>
-        <span style='font-weight: bold; color: #e91e63;'>(Unofficial S.Pd)!</span><br>
+        🎉 Selamat Sidang, Nesty Ermin Nadhirah<br>
+        <span style='font-weight: bold; color: #e91e63;'>(Unofficial S.Pd)!</span> 🎉<br>
         <span>Your hard work shines brightest today!</span>
     </h3>
     """, unsafe_allow_html=True)
@@ -234,10 +244,18 @@ if st.session_state.quiz_passed or st.session_state.force_pass:
               caption="Mungkin ini bukan kebun asli, tapi cintanya lebih luas dari ini, lebih dari waktu 💗",
               use_container_width=True)
 
+    # Bagian ini yang diubah untuk screenshot-able
     st.markdown("""
-    <div style='text-align: center;'>
-    Setiap bunga di kebun ini adalah harapan dan rasa bangga yang kutanam untukmu (ga sesedikit yang digambar ya njir wkwk).<br>
-    Semoga kamu selalu mekar, seindah dan sekuat kebun bunga yang tak lekang oleh waktu dan kita juga semoga lebih lama daripada "selamanya".
+    <div class='kebun-bunga-closing'>
+    Setiap bunga, daun, rumput, pohon, gunung di kebun ini adalah harapan dan rasa bangga yang kutanam untukmu.<br>
+    Walau sepertinya ini tidak bisa menggambarkan rasa bangga-ku padamu secara eksplisit dengan hanya satu gambar ini saja.<br>
+    Juga tidak akan pernah mampu menggantikan buket bunga nyata atau segala bentuk kemewahan duniawi<br>
+    yang mungkin bisa ditawarkan oleh orang lain yang lebih "mampu".<br><br>
+    Namun, semoga kamu selalu mekar, seindah dan sekuat kebun bunga<br>
+    yang tak lekang oleh waktu, dan kita juga semoga lebih lama daripada "selamanya".<br><br>
+    <strong>Sekali lagi selamat, kesayangan, kepunyaan, segalanya-Edwin,<br>
+    Nesty Ermin Nadhirah (Unofficially) S.Pd.</strong><br>
+    Tunggu aku, sebentar lagi aku akan menyusulmu, seperti biasa.
     </div>
     """, unsafe_allow_html=True)
 
